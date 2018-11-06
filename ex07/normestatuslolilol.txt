@@ -1,0 +1,4 @@
+Norme: ./out
+Warning: Not a valid file
+Norme: ./ft_print_numbers.c
+Norme: ./main_ft_print_numbers.c
