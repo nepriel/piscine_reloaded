@@ -31,46 +31,55 @@ void	ft_putstr(char *s)
 
 int		ft_strcmp(char *s1, char *s2)
 {
-	`
+	int i;
+
+	i = 0;
+	while ((s1[i] && s2[i]) && (s1[i] == s2[i]))
+		i++;
+	return (s1[i] - s2[i]);
 }
 
-void print_params(char **s)
+/*void print_params(char **s)
 {
 	int i;
 
-	i = 1;
+	i = 0;
 	while (s[i])
 	{
 		ft_putstr(s[i]);
 		ft_putchar('\n');
 		i++;
 	}
-}
+}*/
 
 int		main(int argc, char **argv)
 {
 	int i;
-	int passage;
-//	char *temp;
+	int test;
+	char *temp;
 
-	passage = argc - 1;
-	if (argc >= 2)
-	{
-		while (passage)
+	test = 1;
+		while (test)
 		{
+			test = 0;
 			i = 0;
 			while (i++ < argc - 1)
 			{
-				if (greater(argv[i], argv[i + 1]))
+				if (ft_strcmp(argv[i], argv[i + 1]) > 0)
 				{
-					/*temp = argv[i];
+					temp = argv[i];
 					argv[i] = argv[i + 1];
-					argv[i + 1] = argv[i];*/
+					argv[i + 1] = temp;
+					test = 1;
 				}
 			}
-			passage--;
 		}
-		print_params(argv);
-	}
+		//print_params(argv);
+		i = 0;
+		while (i++ < argc)
+		{
+			ft_putstr(argv[i]);
+			ft_putchar('\n');
+		}
 	return (0);
 }
