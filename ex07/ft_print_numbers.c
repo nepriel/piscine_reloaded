@@ -6,18 +6,18 @@
 /*   By: vlhomme <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 10:00:53 by vlhomme           #+#    #+#             */
-/*   Updated: 2018/11/06 10:10:35 by vlhomme          ###   ########.fr       */
+/*   Updated: 2018/11/06 10:25:51 by vlhomme          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-void	ft_print_alphabet(void)
+void	ft_print_numbers(void)
 {
 	char i;
 
-	i = 'a';
-	while (i != ('z' + 1))
+	i = '0';
+	while (i != ('9' + 1))
 	{
 		ft_putchar(i);
 		i++;
