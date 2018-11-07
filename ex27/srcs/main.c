@@ -6,7 +6,7 @@
 /*   By: vlhomme <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 16:25:41 by vlhomme           #+#    #+#             */
-/*   Updated: 2018/11/07 17:28:41 by vlhomme          ###   ########.fr       */
+/*   Updated: 2018/11/07 18:15:08 by vlhomme          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,13 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <unistd.h>
 
-int ft_read(char *s)
+int	ft_read(char *s)
 {
-	int fd;
-	int ret;
-	char buf[4096 + 1];
+	int		fd;
+	int		ret;
+	char	buf[4096 + 1];
 
 	if ((fd = open(s, O_RDONLY)) == -1)
 	{

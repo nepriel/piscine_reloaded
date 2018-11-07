@@ -1,10 +1,10 @@
 NAME = ft_display_file
 FLAG = -Wall -Wextra -Werror
 S = ./srcs/
-FILES = $(S)ft_putchar.c $(S)ft_putstr.c $(S)ft_strcmp.c $(S)ft_strlen.c $(S)ft_swap.c $(S)main.c
+FILES = $(S)ft_putstr.c $(S)ft_strcmp.c $(S)ft_strlen.c $(S)ft_swap.c $(S)main.c
 INCLUDE = -I ./includes/
 
-OBJ = ft_putchar.o ft_putstr.o ft_strcmp.o ft_strlen.o ft_swap.o main.o
+OBJ = ft_putstr.o ft_strcmp.o ft_strlen.o ft_swap.o main.o
 
 make: all
 
