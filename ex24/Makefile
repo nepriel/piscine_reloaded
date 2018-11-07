@@ -16,7 +16,7 @@ $(NAME):
 	ranlib $(NAME)
 
 clean:
-	rm ft_putchar.o ft_putstr.o ft_strcmp.o ft_strlen.o ft_swap.o
+	rm -f ft_putchar.o ft_putstr.o ft_strcmp.o ft_strlen.o ft_swap.o
 fclean: clean
 	rm $(NAME)
 re: fclean all
